@@ -1,0 +1,42 @@
+.pro-item {
+  overflow: hidden;
+  padding: 30rpx;
+  background-color: #f8f8f8;
+}
+.pro-logo {
+  float: left;
+  width: 200rpx;
+  height: 300rpx;
+}
+.pro-body {
+  margin-left: 250rpx;
+}
+.pro-title {
+  color: #212121;
+  font-size: 34rpx;
+  line-height: 1;
+}
+.pro-desc {
+  color: #999999;
+  font-size: 24rpx;
+  margin-top: 10rpx;
+}
+
+.divLine{
+ background: white;
+ width: 100%;
+ height: 20rpx;
+}
+
+.text-dev {
+  color: #999999;
+  font-size: 24rpx;
+}
+.ji-item {
+  margin: 20rpx 2% 20rpx 2%;
+  width: 20%;
+  border: 1px solid #000;
+  float: left;
+  text-align: center;
+  line-height: 40px; 
+}

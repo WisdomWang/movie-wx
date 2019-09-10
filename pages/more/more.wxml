@@ -1,0 +1,22 @@
+
+<scroll-view scroll-y="true" style="height: 100vh">
+        <view class="film">
+        <view class="film-item" wx:for="{{films}}" data-index='{{index}}' bindtap='toDetail' id="{{item.id}}">
+                    <view class="film-cover">
+                        <image src="{{item.pic}}" class="film-cover-img"></image>
+                        <view class="film-rating">
+                            <block wx:if="{{item.pf == 0}}">
+                                暂无评分
+                            </block>
+                            <block wx:else>
+                                {{item.pf}}分
+                            </block>
+                        </view>
+                    </view>
+                    <view class="file-intro">
+                        <view class="film-title">{{item.name}}</view>
+                    </view>
+                </view>
+        </view>
+    </scroll-view>
+

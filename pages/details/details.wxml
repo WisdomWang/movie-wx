@@ -1,0 +1,25 @@
+<scroll-view scroll-y="true" style="height: 100vh">
+<view class='items-list'>
+<view class='pro-item'>
+<template is="objectCombine" data="{{filmsDetail}}"></template>
+<image class='pro-logo' src='{{filmsDetail.pic}}'></image>
+<view class='pro-body'>
+<view class='pro-title'>{{filmsDetail.name}}</view>
+<text class='pro-desc'>导演:{{filmsDetail.daoyan}}\n主演:{{filmsDetail.zhuyan}}\n类型:{{filmsDetail.type}}</text>
+</view>
+</view>
+</view>
+<view class="divLine"></view>
+<view class='pro-item'>
+<text>作品简介:\n</text>
+<text class='text-dev'>{{filmsDetail.text}}\n</text>
+<text class='text-dev'>{{filmsDetail.state}}</text>
+</view>
+<view class="divLine"></view>
+<view class='pro-item'>
+<view class='ji-item' wx:for="{{filmsDetail.zu[0].ji}}" bindtap='clickedBtn' data-url='{{item.purl}}'>
+{{item.name}}
+</view>
+</view>
+
+</scroll-view>

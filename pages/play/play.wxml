@@ -1,0 +1,3 @@
+<view class="tc">
+  <video id="myVideo" src="{{playurl}}" controls></video>
+</view>
