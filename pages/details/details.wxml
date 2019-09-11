@@ -9,13 +9,11 @@
 </view>
 </view>
 </view>
-<view class="divLine"></view>
 <view class='pro-item'>
 <text>作品简介:\n</text>
 <text class='text-dev'>{{filmsDetail.text}}\n</text>
 <text class='text-dev'>{{filmsDetail.state}}</text>
 </view>
-<view class="divLine"></view>
 <view class='pro-item'>
 <view class='ji-item' wx:for="{{filmsDetail.zu[0].ji}}" bindtap='clickedBtn' data-url='{{item.purl}}'>
 {{item.name}}

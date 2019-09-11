@@ -1,5 +1,8 @@
-
-<scroll-view scroll-y="true" style="height: 100vh" lower-threshold="100"  bindscrolltolower="scrollToLower">
+<view class="form">
+<input class="searchInput" value='{{keyWord}}' bindconfirm='goSearch' bindblur='goSearch' placeholder="请输入搜索关键字" type="text">
+</input>
+</view>
+<scroll-view scroll-y="true" style="height: 90vh">
         <view class="film">
         <view class="film-item" wx:for="{{films}}" data-index='{{index}}' bindtap='toDetail' id="{{item.id}}">
                     <view class="film-cover">
@@ -23,4 +26,3 @@
       <view wx:if="{{noMore}}">没有更多了</view>
     </view>
     </scroll-view>
-

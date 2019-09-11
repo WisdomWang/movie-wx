@@ -35,8 +35,9 @@
 .ji-item {
   margin: 20rpx 2% 20rpx 2%;
   width: 20%;
-  border: 1px solid #000;
+  border: 1px solid #333333;
   float: left;
   text-align: center;
   line-height: 40px; 
+  color: #333333;
 }

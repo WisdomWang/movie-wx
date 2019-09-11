@@ -1,20 +1,22 @@
 {
-  "pages":[
+  "pages": [
     "pages/recommand/recommand",
     "pages/television/television",
     "pages/movies/movies",
     "pages/details/details",
     "pages/play/play",
-    "pages/more/more"
+    "pages/more/more",
+    "pages/search/search"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle": "black"
   },
   "tabBar": {
-    "backgroundColor": "white",
+    "selectedColor": "#3ba3ed",
+    "backgroundColor":"#e8e8e8",
     "list": [
       {
         "pagePath": "pages/recommand/recommand",
@@ -33,7 +35,14 @@
         "text": "电影",
         "iconPath": "images/movie.png",
         "selectedIconPath": "images/movie_selected.png"
+      },
+      {
+        "pagePath": "pages/search/search",
+        "text": "搜索",
+        "iconPath": "images/search.png",
+        "selectedIconPath": "images/search_selected.png"
       }
     ]
-  }
+  },
+  "sitemapLocation": "sitemap.json"
 }
