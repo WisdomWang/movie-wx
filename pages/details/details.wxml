@@ -5,6 +5,7 @@
 <image class='pro-logo' src='{{filmsDetail.pic}}'></image>
 <view class='pro-body'>
 <view class='pro-title'>{{filmsDetail.name}}</view>
+<view class="divLine"></view>
 <text class='pro-desc'>导演:{{filmsDetail.daoyan}}\n主演:{{filmsDetail.zhuyan}}\n类型:{{filmsDetail.type}}</text>
 </view>
 </view>
@@ -12,6 +13,7 @@
 <view class='pro-item'>
 <text>作品简介:\n</text>
 <text class='text-dev'>{{filmsDetail.text}}\n</text>
+<view class="divLine"></view>
 <text class='text-dev'>{{filmsDetail.state}}</text>
 </view>
 <view class='pro-item'>

@@ -89,6 +89,7 @@ Page({
   getList: function (isMore) {
     var self = this;
     var params;
+    wx.showLoading({ title: '加载中', icon: 'loading', duration: 10000 });
     if(this.data.isRecc) {
       params = {
         'ztid': this.data.kindId,
@@ -125,6 +126,16 @@ Page({
             noMore: true
           })
         }
+      },
+      fail: () => {
+        wx.showToast({
+          title: '网络错误',
+          icon: 'none',
+          duration: 1500
+        })
+      },
+      complete: () => {
+        wx.hideLoading()
       }
     })
   },

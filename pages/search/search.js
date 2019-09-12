@@ -66,6 +66,7 @@ Page({
   },
   getList: function () {
     var self = this;
+    wx.showLoading({ title: '加载中', icon: 'loading', duration: 10000 });
     wx.request({
       url: 'https://mjappaz.yefu365.com/index.php/app/ios/vod/index',
       method: 'GET',
@@ -86,6 +87,16 @@ Page({
           duration: 1500
         })
       }
+      },
+      fail: () => { 
+        wx.showToast({
+          title: '网络错误',
+          icon: 'none',
+          duration: 1500
+        })
+      },
+      complete: () => {
+        wx.hideLoading()
       }
     })
   },

@@ -12,11 +12,8 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
     var id = options.id;
-    console.log(id);
     this.loadDetail(id);
-    
   },
 
   /**
@@ -69,6 +66,7 @@ Page({
    },
   loadDetail: function (id) {
     var self = this;
+    wx.showLoading({ title: '加载中', icon: 'loading', duration: 10000 });
     wx.request({
       url: 'https://mjappaz.yefu365.com/index.php/app/ios/vod/show',
       method: 'GET',
@@ -77,12 +75,19 @@ Page({
       },
       success: function (res) {
         console.log(res);
-        //var jsonObj = JSON.parse(res.data.data)
-        console.log(res.data.data);
-
         self.setData({
           filmsDetail:res.data.data,
         })
+      },
+      fail: () => {
+        wx.showToast({
+          title: '网络错误',
+          icon: 'none',
+          duration: 1500
+        })
+      },
+      complete: () => {
+        wx.hideLoading()
       }
     })
   },

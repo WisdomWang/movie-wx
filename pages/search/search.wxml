@@ -1,5 +1,5 @@
 <view class="form">
-<input class="searchInput" value='{{keyWord}}' bindconfirm='goSearch' bindblur='goSearch' placeholder="请输入搜索关键字" type="text">
+<input class="searchInput" value='{{keyWord}}' bindblur='goSearch' placeholder="请输入搜索关键字" type="text">
 </input>
 </view>
 <scroll-view scroll-y="true" style="height: 90vh">
