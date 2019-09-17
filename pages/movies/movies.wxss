@@ -21,7 +21,7 @@
 
 .film-cover, .film-cover-img {
     width: 350rpx;
-    height: 508rpx;
+    height: 450rpx;
 }
 
 .film-cover {
